@@ -26,8 +26,8 @@ $black:black;
   background: none;
 }
 body{
-  background: url(/img/bg.jpg) fixed center/cover;
-  margin: 0 auto;
+  background: url(../img/bg.jpg) fixed center/cover;
+  min-height: 1300px;
 }
  .btn{
   color: $black;
