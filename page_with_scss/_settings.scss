@@ -43,25 +43,26 @@ body{
 H1{
   text-transform: uppercase;
   color: $white;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-family: $font1;
-  @include center
+  margin: 0 auto;
 }
 h2{
   text-transform: uppercase;
   color: $black;
   font-size: 3rem;
   font-family: $font1;
-  @include center
+  @include center;
 }
 h3{
   text-transform: uppercase;
   color: $black;
   font-size: 0.8rem;
-  @include center
+  @include center;
 }
 p{
   font-family: $font2;
-  font-size: 0.7rem;
-  color: #ccc;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $white;
 }
