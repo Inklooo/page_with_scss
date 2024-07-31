@@ -6,62 +6,61 @@
   font-family: "merri";
   src: url(../fonts/Merriweather-Light.ttf);
 }
-
-$font1: inter-bold, sans-serif;
-$font2: merri, serif;
-$white:white;
-$grey:#cccccc80;
-$black:black;
-
-@mixin center{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style-type: none;
   background: none;
 }
-body{
+
+body {
   background: url(/img/bg.jpg) fixed center/cover;
   margin: 0 auto;
 }
- .btn{
-  color: $black;
-  border: 1.5px solid $black;
+
+.btn {
+  color: black;
+  border: 1.5px solid black;
   padding: 14px 24px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.6rem;
   background: none;
+}
 
- }
-H1{
+H1 {
   text-transform: uppercase;
-  color: $white;
+  color: white;
   font-size: 3rem;
-  font-family: $font1;
-  @include center
+  font-family: inter-bold, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h2{
+
+h2 {
   text-transform: uppercase;
-  color: $black;
+  color: black;
   font-size: 3rem;
-  font-family: $font1;
-  @include center
+  font-family: inter-bold, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-h3{
+
+h3 {
   text-transform: uppercase;
-  color: $black;
+  color: black;
   font-size: 0.8rem;
-  @include center
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-p{
-  font-family: $font2;
+
+p {
+  font-family: merri, serif;
   font-size: 0.7rem;
   color: #ccc;
-}
+}/*# sourceMappingURL=index.css.map */
