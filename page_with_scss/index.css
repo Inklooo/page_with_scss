@@ -15,7 +15,7 @@
 }
 
 body {
-  background: url(../img/bg.jpg) fixed center/cover;
+  background: url(./assets/img/bg.jpg) fixed center/cover;
   min-height: 1300px;
 }
 
@@ -31,6 +31,7 @@ body {
 }
 
 H1 {
+  text-align: center;
   text-transform: uppercase;
   color: white;
   font-size: 3.2rem;
@@ -39,9 +40,10 @@ H1 {
 }
 
 h2 {
+  text-align: center;
   text-transform: uppercase;
   color: black;
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-family: inter-bold, sans-serif;
   display: flex;
   justify-content: center;
@@ -49,6 +51,7 @@ h2 {
 }
 
 h3 {
+  text-align: center;
   text-transform: uppercase;
   color: black;
   font-size: 0.8rem;
@@ -58,6 +61,7 @@ h3 {
 }
 
 p {
+  text-align: center;
   font-family: merri, serif;
   font-size: 0.8rem;
   font-weight: 700;
@@ -127,7 +131,7 @@ nav ul {
 .nav-left li:hover {
   color: black;
   font-weight: 900;
-  background-color: aliceblue;
+  background-color: rgba(246, 239, 239, 0.971);
 }
 
 .nav-right li {
@@ -137,4 +141,69 @@ nav ul {
   padding: 24px;
   color: white;
   font-weight: 900;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+main {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section1:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.082);
+  top: 58px;
+  left: 60%;
+}
+
+.section1:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 30%;
+  background: rgba(0, 0, 0, 0.082);
+  top: 58px;
+  right: 60%;
+}
+
+.section1 {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.section1 span {
+  font-family: merri, serif;
+  font-weight: 100;
+  font-size: 0.8rem;
+  color: gray;
+}
+.section1 h2 {
+  margin-top: 40px;
+  padding: 20px;
+  width: 80%;
+}
+.section1 p {
+  width: 55%;
+  padding: 20px;
+  line-height: 2rem;
+  font-family: merri, serif;
+  color: gray;
+  font-size: 0.7rem;
+  font-weight: 200;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.section1 img {
+  width: 90%;
+  height: 500px;
+}
+.section1 .btn {
+  margin: 50px 0 80px;
 }/*# sourceMappingURL=index.css.map */
