@@ -10,8 +10,9 @@
 $font1: inter-bold, sans-serif;
 $font2: merri, serif;
 $white:white;
-$grey:rgba(246, 239, 239, 0.971);
+$grey:rgba(246, 239, 239, 0.589);
 $grey2:gray;
+$grey3:rgb(210, 208, 208);
 $black:black;
 
 @mixin center{
@@ -39,8 +40,20 @@ body{
   letter-spacing: 1px;
   font-size: 0.6rem;
   background: none;
+  &:hover{
+    background: black;
+    border: 1.2px solid $white;
+    color: $white;
 
+  }
  }
+.submit-container{
+  input{
+    color: $grey2;
+    border: 2px solid $grey2;
+  }
+}
+
 H1{
   text-align: center;
   text-transform: uppercase;

@@ -29,6 +29,16 @@ body {
   font-size: 0.6rem;
   background: none;
 }
+.btn:hover {
+  background: black;
+  border: 1.2px solid white;
+  color: white;
+}
+
+.submit-container input {
+  color: gray;
+  border: 2px solid gray;
+}
 
 H1 {
   text-align: center;
@@ -74,6 +84,8 @@ header p {
   justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  color: white;
+  font-style: italic;
 }
 header span {
   display: flex;
@@ -107,7 +119,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  height: 60px;
   width: 80%;
   margin: 0 auto;
 }
@@ -124,12 +136,13 @@ nav ul {
   font-size: 0.6rem;
   letter-spacing: 1px;
   color: white;
-  font-weight: 900;
+  font-weight: 500;
+  font-family: inter-bold, sans-serif;
 }
 .nav-left li:hover {
   color: black;
   font-weight: 900;
-  background-color: rgba(246, 239, 239, 0.971);
+  background-color: rgba(246, 239, 239, 0.589);
 }
 
 .nav-right li {
@@ -211,7 +224,7 @@ main img {
 .section2 {
   display: grid;
   grid-template-columns: 50% 50%;
-  border-top: 1px solid rgba(246, 239, 239, 0.971);
+  border-top: 1px solid rgb(210, 208, 208);
 }
 
 .left-part,
@@ -239,13 +252,12 @@ main img {
 }
 
 .left-part {
-  border-right: 1px solid rgba(246, 239, 239, 0.971);
+  border-right: 1px solid rgb(210, 208, 208);
 }
 
 footer {
-  background: white;
+  background: whitesmoke;
   width: 80%;
-  height: 600px;
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0 auto 70px;
@@ -253,7 +265,7 @@ footer {
 
 form {
   display: grid;
-  gap: 18px;
+  gap: 12px;
   padding: 60px 50px;
   grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
   width: 80%;
@@ -269,21 +281,20 @@ form label {
   font-family: inter-bold, sans-serif;
 }
 form input {
-  height: 30px;
-  border: 0.7px solid gray;
+  height: 40px;
+  border: 0.7px solid rgb(210, 208, 208);
+  margin-bottom: 20px;
 }
 form textarea {
-  height: 200px;
-  border: 0.7px solid gray;
-}
-form .submit-container .btn {
-  color: gray;
-  border: 2px solid gray;
+  height: auto;
+  border: 0.7px solid rgb(210, 208, 208);
+  resize: none;
 }
 
 .infos-contact {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-rows: 25% 25% 25% 25%;
+  border-left: 1px solid rgb(210, 208, 208);
 }
 .infos-contact div {
   display: grid;
@@ -291,12 +302,35 @@ form .submit-container .btn {
   align-items: center;
   justify-items: start;
   padding: 20px;
+  border-bottom: 1px solid rgb(210, 208, 208);
 }
 .infos-contact div h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: gray;
   font-weight: 900;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-family: inter-bold, sans-serif;
+}
+.infos-contact div p {
+  letter-spacing: 1px;
+  text-align: start;
+  color: gray;
+  font-family: merri, serif;
+  line-height: 30px;
+}
+.infos-contact div ul {
+  display: flex;
+  justify-content: space-around;
+}
+.infos-contact div ul li {
+  padding: 20px;
+  margin-right: 10px;
+  border: 0.8px solid rgb(210, 208, 208);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
