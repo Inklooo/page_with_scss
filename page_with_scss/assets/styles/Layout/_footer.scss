@@ -1,10 +1,12 @@
 footer{
   background: whitesmoke;
   width: 80%;
-
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0 auto 70px;
+  @media screen and (max-width: 850px) {
+    grid-template-columns: 1fr;
+  }
 }
 form{
   display: grid;
@@ -13,7 +15,7 @@ form{
     grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
     width: 80%;
     margin: 0 auto;
-    padding: 30px;
+
   label{
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -35,15 +37,18 @@ form{
   }
   .infos-contact{
     display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: repeat(4, 1fr);
     border-left: 1px solid $grey3;
+
   div{
     display: grid;
     grid-template-columns: 30% 70% ;
     align-items: center;
     justify-items: start;
     padding: 20px;
-    border-bottom: 1px solid$grey3 ;
+    border-bottom: 1px solid $grey3 ;
+    }
+  }
     h3{
       text-transform: uppercase;
       letter-spacing: 1px;
@@ -57,7 +62,7 @@ form{
       text-align: start;
       color: $grey2;
       font-family: $font2;
-      line-height: 30px;
+      line-height: 28px;
     }
     ul{
       display: flex;
@@ -72,6 +77,3 @@ form{
         @include center;
       }
     }
-
-  }
-  }

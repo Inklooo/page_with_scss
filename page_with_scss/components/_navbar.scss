@@ -6,6 +6,11 @@ nav{
   height: 60px;
   width: 80%;
   margin: 0 auto;
+  @media screen and (max-width: 630px) {
+    .nav-right{
+      display: none;
+    }
+  }
     ul{
       display: flex;
     }

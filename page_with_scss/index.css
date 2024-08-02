@@ -123,6 +123,11 @@ nav {
   width: 80%;
   margin: 0 auto;
 }
+@media screen and (max-width: 630px) {
+  nav .nav-right {
+    display: none;
+  }
+}
 nav ul {
   display: flex;
 }
@@ -226,6 +231,11 @@ main img {
   grid-template-columns: 50% 50%;
   border-top: 1px solid rgb(210, 208, 208);
 }
+@media screen and (max-width: 750px) {
+  .section2 {
+    display: block;
+  }
+}
 
 .left-part,
 .right-part {
@@ -262,6 +272,11 @@ footer {
   grid-template-columns: 50% 50%;
   margin: 0 auto 70px;
 }
+@media screen and (max-width: 850px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
+}
 
 form {
   display: grid;
@@ -270,7 +285,6 @@ form {
   grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
   width: 80%;
   margin: 0 auto;
-  padding: 30px;
 }
 form label {
   text-transform: uppercase;
@@ -293,7 +307,7 @@ form textarea {
 
 .infos-contact {
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: repeat(4, 1fr);
   border-left: 1px solid rgb(210, 208, 208);
 }
 .infos-contact div {
@@ -304,7 +318,8 @@ form textarea {
   padding: 20px;
   border-bottom: 1px solid rgb(210, 208, 208);
 }
-.infos-contact div h3 {
+
+h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: gray;
@@ -312,18 +327,20 @@ form textarea {
   font-size: 0.7rem;
   font-family: inter-bold, sans-serif;
 }
-.infos-contact div p {
+
+p {
   letter-spacing: 1px;
   text-align: start;
   color: gray;
   font-family: merri, serif;
-  line-height: 30px;
+  line-height: 28px;
 }
-.infos-contact div ul {
+
+ul {
   display: flex;
   justify-content: space-around;
 }
-.infos-contact div ul li {
+ul li {
   padding: 20px;
   margin-right: 10px;
   border: 0.8px solid rgb(210, 208, 208);
