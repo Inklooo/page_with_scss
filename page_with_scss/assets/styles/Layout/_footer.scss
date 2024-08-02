@@ -1,14 +1,14 @@
 footer{
-  background: $white;
+  background: whitesmoke;
   width: 80%;
-  height: 600px;
+
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 0 auto 70px;
 }
 form{
   display: grid;
-    gap: 18px;
+    gap: 12px;
     padding: 60px 50px;
     grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
     width: 80%;
@@ -23,37 +23,55 @@ form{
     font-family: $font1;
   }
   input{
-    height: 30px;
-    border: 0.7px solid $grey2;
+    height: 40px;
+    border: 0.7px solid $grey3;
+    margin-bottom: 20px;
   }
   textarea{
-    height: 200px;
-    border: 0.7px solid $grey2;
-  }
-  .submit-container{
-    .btn{
-      color: $grey2;
-      border: 2px solid $grey2;
-    }
+    height: auto;
+    border: 0.7px solid $grey3;
+    resize: none;
   }
   }
   .infos-contact{
-  display: grid;
-  grid-template-columns: auto;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    border-left: 1px solid $grey3;
   div{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 70% ;
     align-items: center;
     justify-items: start;
     padding: 20px;
+    border-bottom: 1px solid$grey3 ;
     h3{
       text-transform: uppercase;
       letter-spacing: 1px;
       color: $grey2;
       font-weight: 900;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       font-family: $font1;
-
     }
+    p{
+      letter-spacing: 1px;
+      text-align: start;
+      color: $grey2;
+      font-family: $font2;
+      line-height: 30px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      li{
+        padding: 20px;
+        margin-right: 10px;
+        border: 0.8px solid $grey3;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        @include center;
+      }
+    }
+
   }
   }

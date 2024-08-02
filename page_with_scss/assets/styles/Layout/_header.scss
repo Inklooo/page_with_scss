@@ -6,6 +6,8 @@ header{
   p{
     @include center;
     margin-bottom: 60px;
+    color: $white;
+    font-style: italic
   }
   span{
     @include center;

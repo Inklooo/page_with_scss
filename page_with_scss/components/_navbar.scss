@@ -3,7 +3,7 @@ nav{
   background-color: rgb(255, 255, 255,0.2);
   display: flex;
   justify-content: space-between;
-  height: 55px;
+  height: 60px;
   width: 80%;
   margin: 0 auto;
     ul{
@@ -21,7 +21,8 @@ nav{
       font-size: 0.6rem;
       letter-spacing: 1px;
       color: white;
-      font-weight: 900;
+      font-weight: 500;
+      font-family: $font1;
       &:hover{
         color: black;
         font-weight: 900;

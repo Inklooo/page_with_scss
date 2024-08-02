@@ -66,7 +66,7 @@ main{
 .section2{
   display: grid;
   grid-template-columns: 50% 50%;
-  border-top: 1px solid $grey;
+  border-top: 1px solid $grey3;
 }
 .left-part,
 .right-part{
@@ -75,7 +75,6 @@ main{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
       span {
         font-size: 0.75rem;
         color: $grey2;
@@ -91,5 +90,5 @@ main{
       }
     }
     .left-part {
-      border-right: 1px solid $grey;
+      border-right: 1px solid $grey3;
     }
