@@ -240,4 +240,63 @@ main img {
 
 .left-part {
   border-right: 1px solid rgba(246, 239, 239, 0.971);
+}
+
+footer {
+  background: white;
+  width: 80%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 0 auto 70px;
+}
+
+form {
+  display: grid;
+  gap: 18px;
+  padding: 60px 50px;
+  grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+}
+form label {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gray;
+  font-weight: 900;
+  font-size: 0.8rem;
+  font-family: inter-bold, sans-serif;
+}
+form input {
+  height: 30px;
+  border: 0.7px solid gray;
+}
+form textarea {
+  height: 200px;
+  border: 0.7px solid gray;
+}
+form .submit-container .btn {
+  color: gray;
+  border: 2px solid gray;
+}
+
+.infos-contact {
+  display: grid;
+  grid-template-columns: auto;
+}
+.infos-contact div {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-items: start;
+  padding: 20px;
+}
+.infos-contact div h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: gray;
+  font-weight: 900;
+  font-size: 0.8rem;
+  font-family: inter-bold, sans-serif;
 }/*# sourceMappingURL=index.css.map */
